@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/textfield@11.0.0/dist/mdc.textfield.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Sistema de controle</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+    
+        <header>
+            <div class="logo">
+                <img src="./images/Imagem do WhatsApp de 2023-08-07 à(s) 18.02.24.jpg"/>
+                <svg width="35" height="35" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="32" width="32" height="32" rx="16" transform="rotate(90 32 0)" fill="#828282"/>
+                    <path d="M18 11L12 16L18 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2>Eventos</h2>
+            </div><!--logo-->
+              
+                <div class="header-content">
+                    <div class="info">
+                        <h2>SPR SISTEMAS DE CONTROLE</h2>
+                        <p>email@gmail.com</p>
+
+                    </div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/></svg>
+            <div class="options-card">
+                <ul class="options-list">
+                    <li class="option-item" style="border-bottom: 1px solid #D9D9D9;">Empresas</li>
+                    <li class="option-item" style="border-bottom: 1px solid #D9D9D9;">Administradores</li>
+                    <li class="logout"><a href="#">Sair<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="logout"><line class="cls-1" x1="15.92" x2="28.92" y1="16" y2="16"/><path d="M23.93,25v3h-16V4h16V7h2V3a1,1,0,0,0-1-1h-18a1,1,0,0,0-1,1V29a1,1,0,0,0,1,1h18a1,1,0,0,0,1-1V25Z"/><line class="cls-1" x1="28.92" x2="24.92" y1="16" y2="20"/><line class="cls-1" x1="28.92" x2="24.92" y1="16" y2="12"/><line class="cls-1" x1="24.92" x2="24.92" y1="8.09" y2="6.09"/><line class="cls-1" x1="24.92" x2="24.92" y1="26" y2="24"/></g></svg></a></li>
+                </ul>
+            </div>
+        </div>  <!--header-content-->
+        </header>
+        
+      <div class="container">
+        <div class="info-usuario">
+            <div class="mdc-text-field mdc-text-field--outlined">
+                <input type="text" id="cnpj-input" class="mdc-text-field__input meu-input">
+                <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                        <label for="my-input" class="mdc-floating-label">CNPJ</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                </div>
+            </div>
+        </div><!--info-usuario-->
+
+        <div class="info-usuario">
+            <div class="mdc-text-field mdc-text-field--outlined">
+                <input type="text" id="email-input" class="mdc-text-field__input">
+                <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                        <label for="my-input" class="mdc-floating-label">E-mailL</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                </div>
+            </div>
+        </div><!--info-usuario-->
+
+        <div class="info-usuario">
+            <div class="mdc-text-field mdc-text-field--outlined">
+                <input type="text" id="tel-input" class="mdc-text-field__input">
+                <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                        <label for="my-input" class="mdc-floating-label">Telefone do proprietário</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                </div>
+            </div>
+        </div><!--info-usuario-->
+
+        <div class="info-usuario">
+            <div class="mdc-text-field mdc-text-field--outlined">
+                <input type="text" id="name-input" class="mdc-text-field__input">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                        <label for="my-input" class="mdc-floating-label">Nome do proprietário</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                </div>
+            </div>
+        </div><!--info-usuario-->
+    
+       <div class="edit-container">
+        <a href="#" class="edit"> <svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M55.736,13.636l-4.368-4.362c-0.451-0.451-1.044-0.677-1.636-0.677c-0.592,0-1.184,0.225-1.635,0.676l-3.494,3.484   l7.639,7.626l3.494-3.483C56.639,15.998,56.639,14.535,55.736,13.636z"/><polygon points="21.922,35.396 29.562,43.023 50.607,22.017 42.967,14.39  "/><polygon points="20.273,37.028 18.642,46.28 27.913,44.654  "/><path d="M41.393,50.403H12.587V21.597h20.329l5.01-5H10.82c-1.779,0-3.234,1.455-3.234,3.234v32.339   c0,1.779,1.455,3.234,3.234,3.234h32.339c1.779,0,3.234-1.455,3.234-3.234V29.049l-5,4.991V50.403z"/></g></svg>
+          
+            Editar</a>
+       </div>
+
+    </div><!--container-->
+
+    <div class="container-crud">
+        <div class="div-content">
+            <h2>Eventos</h2>
+            <div class="division-btn">
+            <div class="mdc-touch-target-wrapper">
+                <button class="mdc-button mdc-button--touch" style="color: black; background-color: white; border: 1px solid black; "  >
+                  <span class="mdc-button__ripple"></span>
+                  <span class="mdc-button__touch"></span>
+                  <span class="mdc-button__label">Usuários de suporte</span>
+                </button>
+            </div>
+             <div class="mdc-touch-target-wrapper">
+                <button class="mdc-button mdc-button--touch " id="cadastrar-evento">
+                  <span class="mdc-button__ripple"></span>
+                  <span class="mdc-button__touch"></span>
+                  <span class="mdc-button__label">+ Cadastrar novo evento</span>
+                </button>
+              </div>
+        </div><!--division-btn-->
+    </div>
+
+    
+<div class="mdc-data-table one-table" style="border: none !important;">
+    <div class="mdc-data-table__table-container" >
+      <table class="mdc-data-table__table" aria-label="Dessert calories">
+        
+        <thead >
+          <tr class="mdc-data-table__header-row " >
+          
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col">ID</th>
+            <th class="mdc-data-table__header-cell name" role="columnheader" scope="col">Nome</th>
+            <th class="mdc-data-table__header-cell " role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+  
+          </tr>
+        </thead>
+  
+     
+        <tbody class="mdc-data-table__content"  >
+          
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+           
+            <th class="mdc-data-table__cell" scope="row" id="u0">06</th>
+            <td class="mdc-data-table__cell">Festa do Peão de Boiadeiro de Barretos</td>
+            <td class="mdc-data-table__cell"><div class="edit-dois">
+              <a href="#" class="edit"> <svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M55.736,13.636l-4.368-4.362c-0.451-0.451-1.044-0.677-1.636-0.677c-0.592,0-1.184,0.225-1.635,0.676l-3.494,3.484   l7.639,7.626l3.494-3.483C56.639,15.998,56.639,14.535,55.736,13.636z"/><polygon points="21.922,35.396 29.562,43.023 50.607,22.017 42.967,14.39  "/><polygon points="20.273,37.028 18.642,46.28 27.913,44.654  "/><path d="M41.393,50.403H12.587V21.597h20.329l5.01-5H10.82c-1.779,0-3.234,1.455-3.234,3.234v32.339   c0,1.779,1.455,3.234,3.234,3.234h32.339c1.779,0,3.234-1.455,3.234-3.234V29.049l-5,4.991V50.403z"/></g></svg></a>
+            </div></td>
+            <td class="mdc-data-table__cell"><div class="mdc-touch-target-wrapper">
+              <button class="mdc-button mdc-button--touch btn-menor" style=" color: white; background-color: black; border-radius: 10px;">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label">Dias</span>
+              </button>
+          </div></td>
+            <td class="mdc-data-table__cell mdc-data-table__cell--numeric"> <div class="mdc-touch-target-wrapper">
+              <button class="mdc-button mdc-button--touch" style=" color: white; background-color: black; border-radius: 10px;">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__touch"></span>
+                <span class="mdc-button__label">Setores</span>
+              </button>
+          </div></td>
+          <td class="mdc-data-table__cell"> <div class="mdc-touch-target-wrapper">
+            <button class="mdc-button mdc-button--touch" style="color: white; background-color: black; border-radius: 10px;">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Meeting Points</span>
+            </button>
+        </div></td>
+            <td class="mdc-data-table__cell"><div class="icon-delete">
+              <a><svg enable-background="new 0 0 91 91" height="91px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg></a>
+          </div></td>
+          </tr>
+        </tbody>
+  
+
+        
+      <tbody class="mdc-data-table__content"  >
+        
+        <tr data-row-id="u0" class="mdc-data-table__row"  >
+         
+          <th class="mdc-data-table__cell" scope="row" id="u0">06</th>
+          <td class="mdc-data-table__cell">Festa do Peão de Boiadeiro de Barretos</td>
+          <td class="mdc-data-table__cell"><div class="edit-dois">
+            <a href="#" class="edit"> <svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M55.736,13.636l-4.368-4.362c-0.451-0.451-1.044-0.677-1.636-0.677c-0.592,0-1.184,0.225-1.635,0.676l-3.494,3.484   l7.639,7.626l3.494-3.483C56.639,15.998,56.639,14.535,55.736,13.636z"/><polygon points="21.922,35.396 29.562,43.023 50.607,22.017 42.967,14.39  "/><polygon points="20.273,37.028 18.642,46.28 27.913,44.654  "/><path d="M41.393,50.403H12.587V21.597h20.329l5.01-5H10.82c-1.779,0-3.234,1.455-3.234,3.234v32.339   c0,1.779,1.455,3.234,3.234,3.234h32.339c1.779,0,3.234-1.455,3.234-3.234V29.049l-5,4.991V50.403z"/></g></svg></a>
+          </div></td>
+          <td class="mdc-data-table__cell"><div class="mdc-touch-target-wrapper">
+            <button class="mdc-button mdc-button--touch btn-menor" style=" color: white; background-color: black; border-radius: 10px;">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Dias</span>
+            </button>
+        </div></td>
+          <td class="mdc-data-table__cell mdc-data-table__cell--numeric"> <div class="mdc-touch-target-wrapper">
+            <button class="mdc-button mdc-button--touch" style=" color: white; background-color: black; border-radius: 10px;">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Setores</span>
+            </button>
+        </div></td>
+        <td class="mdc-data-table__cell"> <div class="mdc-touch-target-wrapper">
+          <button class="mdc-button mdc-button--touch" style="color: white; background-color: black; border-radius: 10px;">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__touch"></span>
+            <span class="mdc-button__label">Meeting Points</span>
+          </button>
+      </div></td>
+          <td class="mdc-data-table__cell"><div class="icon-delete">
+            <a><svg enable-background="new 0 0 91 91" height="91px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg></a>
+        </div></td>
+        
+        </tr>
+
+      </tbody>
+
+      
+      <tbody class="mdc-data-table__content"  >
+        
+        <tr data-row-id="u0" class="mdc-data-table__row"  >
+         
+          <th class="mdc-data-table__cell" scope="row" id="u0">06</th>
+          <td class="mdc-data-table__cell">Festa do Peão de Boiadeiro de Barretos</td>
+          <td class="mdc-data-table__cell"><div class="edit-dois">
+            <a href="#" class="edit"> <svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M55.736,13.636l-4.368-4.362c-0.451-0.451-1.044-0.677-1.636-0.677c-0.592,0-1.184,0.225-1.635,0.676l-3.494,3.484   l7.639,7.626l3.494-3.483C56.639,15.998,56.639,14.535,55.736,13.636z"/><polygon points="21.922,35.396 29.562,43.023 50.607,22.017 42.967,14.39  "/><polygon points="20.273,37.028 18.642,46.28 27.913,44.654  "/><path d="M41.393,50.403H12.587V21.597h20.329l5.01-5H10.82c-1.779,0-3.234,1.455-3.234,3.234v32.339   c0,1.779,1.455,3.234,3.234,3.234h32.339c1.779,0,3.234-1.455,3.234-3.234V29.049l-5,4.991V50.403z"/></g></svg></a>
+          </div></td>
+          <td class="mdc-data-table__cell"><div class="mdc-touch-target-wrapper">
+            <button class="mdc-button mdc-button--touch btn-menor" style=" color: white; background-color: black; border-radius: 10px;">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Dias</span>
+            </button>
+        </div></td>
+          <td class="mdc-data-table__cell mdc-data-table__cell--numeric"> <div class="mdc-touch-target-wrapper">
+            <button class="mdc-button mdc-button--touch" style=" color: white; background-color: black; border-radius: 10px;">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Setores</span>
+            </button>
+        </div></td>
+        <td class="mdc-data-table__cell"> <div class="mdc-touch-target-wrapper">
+          <button class="mdc-button mdc-button--touch" style="color: white; background-color: black; border-radius: 10px;">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__touch"></span>
+            <span class="mdc-button__label">Meeting Points</span>
+          </button>
+      </div></td>
+          <td class="mdc-data-table__cell"><div class="icon-delete">
+            <a><svg enable-background="new 0 0 91 91" height="91px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg></a>
+        </div></td>
+        
+        </tr>
+
+      </tbody>
+
+      
+      <tbody class="mdc-data-table__content"  >
+        
+        <tr data-row-id="u0" class="mdc-data-table__row"  >
+         
+          <th class="mdc-data-table__cell" scope="row" id="u0">06</th>
+          <td class="mdc-data-table__cell">Festa do Peão de Boiadeiro de Barretos</td>
+          <td class="mdc-data-table__cell"><div class="edit-dois">
+            <a href="#" class="edit"> <svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M55.736,13.636l-4.368-4.362c-0.451-0.451-1.044-0.677-1.636-0.677c-0.592,0-1.184,0.225-1.635,0.676l-3.494,3.484   l7.639,7.626l3.494-3.483C56.639,15.998,56.639,14.535,55.736,13.636z"/><polygon points="21.922,35.396 29.562,43.023 50.607,22.017 42.967,14.39  "/><polygon points="20.273,37.028 18.642,46.28 27.913,44.654  "/><path d="M41.393,50.403H12.587V21.597h20.329l5.01-5H10.82c-1.779,0-3.234,1.455-3.234,3.234v32.339   c0,1.779,1.455,3.234,3.234,3.234h32.339c1.779,0,3.234-1.455,3.234-3.234V29.049l-5,4.991V50.403z"/></g></svg></a>
+          </div></td>
+          <td class="mdc-data-table__cell"><div class="mdc-touch-target-wrapper">
+            <button class="mdc-button mdc-button--touch btn-menor" style=" color: white; background-color: black; border-radius: 10px;">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Dias</span>
+            </button>
+        </div></td>
+          <td class="mdc-data-table__cell mdc-data-table__cell--numeric"> <div class="mdc-touch-target-wrapper">
+            <button class="mdc-button mdc-button--touch" style=" color: white; background-color: black; border-radius: 10px;">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Setores</span>
+            </button>
+        </div></td>
+        <td class="mdc-data-table__cell"> <div class="mdc-touch-target-wrapper">
+          <button class="mdc-button mdc-button--touch" style="color: white; background-color: black; border-radius: 10px;">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__touch"></span>
+            <span class="mdc-button__label">Meeting Points</span>
+          </button>
+      </div></td>
+          <td class="mdc-data-table__cell"><div class="icon-delete">
+            <a><svg enable-background="new 0 0 91 91" height="91px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg></a>
+        </div></td>
+        
+        </tr>
+
+      </tbody>
+      
+         
+      </table>
+   
+    </div>
+  </div>
+
+  <!--COMEÇANDO MODAL CADASTRAR NOVO EVENTO-->
+
+
+     
+    
+<div class="mdc-dialog mdc-dialog--fullscreen" id="meu-modal5">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <div class="mdc-dialog__header  ">
+        <h2 class="mdc-dialog__title  " id="my-dialog-title" style="font-weight: bold;">
+          Cadastrar novo evento
+        </h2>
+      
+        <button class="mdc-icon-button material-icons mdc-dialog__close mdc-dialog__close5"
+                data-mdc-dialog-action="close">
+          close
+        </button>
+      </div>
+      
+
+      <div class="mdc-dialog__content " id="my-dialog-content">
+         
+          
+        <div class="cadastro-inputs">
+
+        
+    <div class="mdc-text-field mdc-text-field--outlined input-padrao-convidados">
+      <input type="text" id="" class="mdc-text-field__input ">
+      <div class="mdc-notched-outline">
+          <div class="mdc-notched-outline__leading"></div>
+          <div class="mdc-notched-outline__notch">
+              <label for="my-input" class="mdc-floating-label">Limite</label>
+          </div>
+          <div class="mdc-notched-outline__trailing"></div>
+      </div>
+  </div>
+
+  <div class="mdc-select mdc-select--outlined input-padrao-convidados">
+    <div class="mdc-select__anchor" aria-labelledby="outlined-select-label" style="height: 48px;">
+      <span class="mdc-notched-outline">
+        <span class="mdc-notched-outline__leading"></span>
+        <span class="mdc-notched-outline__notch">
+          <span id="outlined-select-label" class="mdc-floating-label">Tipo de credenciamento</span>
+        </span>
+        <span class="mdc-notched-outline__trailing"></span>
+      </span>
+      <span class="mdc-select__selected-text-container">
+        <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+      </span>
+      <span class="mdc-select__dropdown-icon">
+        <svg
+            class="mdc-select__dropdown-icon-graphic"
+            viewBox="7 10 10 5" focusable="false">
+          <polygon
+              class="mdc-select__dropdown-icon-inactive"
+              stroke="none"
+              fill-rule="evenodd"
+              points="7 10 12 15 17 10">
+          </polygon>
+          <polygon
+              class="mdc-select__dropdown-icon-active"
+              stroke="none"
+              fill-rule="evenodd"
+              points="7 15 12 10 17 15">
+          </polygon>
+        </svg>
+      </span>
+    </div>
+  </div> 
+
+  
+        
+  <div class="mdc-text-field mdc-text-field--outlined input-padrao-convidados">
+    <input type="text" id="" class="mdc-text-field__input ">
+    <div class="mdc-notched-outline">
+        <div class="mdc-notched-outline__leading"></div>
+        <div class="mdc-notched-outline__notch">
+            <label for="my-input" class="mdc-floating-label">ID do evento externo </label>
+        </div>
+        <div class="mdc-notched-outline__trailing"></div>
+    </div>
+</div>
+    
+<!--finalizando primeira linha de inputs-->
+
+<!--começando segunda linha dos inputs-->
+
+
+<div class="mdc-select mdc-select--outlined input-padrao-convidados">
+  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label" style="height: 48px;">
+    <span class="mdc-notched-outline">
+      <span class="mdc-notched-outline__leading"></span>
+      <span class="mdc-notched-outline__notch">
+        <span id="outlined-select-label" class="mdc-floating-label">Evento principal</span>
+      </span>
+      <span class="mdc-notched-outline__trailing"></span>
+    </span>
+    <span class="mdc-select__selected-text-container">
+      <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+    </span>
+    <span class="mdc-select__dropdown-icon">
+      <svg
+          class="mdc-select__dropdown-icon-graphic"
+          viewBox="7 10 10 5" focusable="false">
+        <polygon
+            class="mdc-select__dropdown-icon-inactive"
+            stroke="none"
+            fill-rule="evenodd"
+            points="7 10 12 15 17 10">
+        </polygon>
+        <polygon
+            class="mdc-select__dropdown-icon-active"
+            stroke="none"
+            fill-rule="evenodd"
+            points="7 15 12 10 17 15">
+        </polygon>
+      </svg>
+    </span>
+  </div>
+</div> 
+
+
+    
+     
+<div class="mdc-text-field mdc-text-field--outlined input-padrao-convidados">
+  <input type="text" id="" class="mdc-text-field__input ">
+  <div class="mdc-notched-outline">
+      <div class="mdc-notched-outline__leading"></div>
+      <div class="mdc-notched-outline__notch">
+          <label for="my-input" class="mdc-floating-label">URL de download Playstore </label>
+      </div>
+      <div class="mdc-notched-outline__trailing"></div>
+  </div>
+</div>
+
+        
+
+  
+<div class="mdc-text-field mdc-text-field--outlined input-padrao-convidados">
+  <input type="text" id="" class="mdc-text-field__input ">
+  <div class="mdc-notched-outline">
+      <div class="mdc-notched-outline__leading"></div>
+      <div class="mdc-notched-outline__notch">
+          <label for="my-input" class="mdc-floating-label"> URL de download Appstore </label>
+      </div>
+      <div class="mdc-notched-outline__trailing"></div>
+  </div>
+</div>
+
+ 
+
+
+<!--começando linha de checkbox-->
+
+<div class="linha-checkbox-eventos margin-check  ">
+  <div class="mdc-form-field ">
+    <div class="mdc-checkbox">
+      <input type="checkbox"
+             class="mdc-checkbox__native-control"
+             id="checkbox-1"/>
+      <div class="mdc-checkbox__background">
+        <svg class="mdc-checkbox__checkmark"
+             viewBox="0 0 24 24">
+          <path class="mdc-checkbox__checkmark-path"
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+        </svg>
+        <div class="mdc-checkbox__mixedmark"></div>
+      </div>
+      <div class="mdc-checkbox__ripple"></div>
+    </div>
+    <label class="label-convidados" for="checkbox-1" style="font-weight: bold;">Esconder qrcode</label>
+  </div>
+
+
+
+
+
+  <div class="mdc-form-field margin-check ">
+    <div class="mdc-checkbox ">
+      <input type="checkbox"
+             class="mdc-checkbox__native-control"
+             id="checkbox-1"/>
+      <div class="mdc-checkbox__background">
+        <svg class="mdc-checkbox__checkmark"
+             viewBox="0 0 24 24">
+          <path class="mdc-checkbox__checkmark-path"
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+        </svg>
+        <div class="mdc-checkbox__mixedmark"></div>
+      </div>
+      <div class="mdc-checkbox__ripple"></div>
+    </div>
+    <label class="label-convidados-quebralinha" for="checkbox-1" style="font-weight: bold;">Não permitir transferência de <br> ingresso após kit entrega</label>
+  </div>
+
+
+
+
+
+  <div class="mdc-form-field margin-check">
+    <div class="mdc-checkbox">
+      <input type="checkbox"
+             class="mdc-checkbox__native-control"
+             id="checkbox-1"/>
+      <div class="mdc-checkbox__background">
+        <svg class="mdc-checkbox__checkmark"
+             viewBox="0 0 24 24">
+          <path class="mdc-checkbox__checkmark-path"
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+        </svg>
+        <div class="mdc-checkbox__mixedmark"></div>
+      </div>
+      <div class="mdc-checkbox__ripple"></div>
+    </div>
+    <label class="label-convidados" for="checkbox-1" style="font-weight: bold;">Pode controlar kit</label>
+  </div>
+
+
+
+
+  <div class="mdc-form-field margin-check ">
+    <div class="mdc-checkbox">
+      <input type="checkbox"
+             class="mdc-checkbox__native-control"
+             id="checkbox-1"/>
+      <div class="mdc-checkbox__background">
+        <svg class="mdc-checkbox__checkmark"
+             viewBox="0 0 24 24">
+          <path class="mdc-checkbox__checkmark-path"
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+        </svg>
+        <div class="mdc-checkbox__mixedmark"></div>
+      </div>
+      <div class="mdc-checkbox__ripple"></div>
+    </div>
+    <label class="label-convidados" for="checkbox-1" style="font-weight: bold;">Bloquear envio de email</label>
+  </div>
+
+
+</div><!--linha checkbox eventos-->
+
+</div>
+
+
+
+<div class="h2-div-obg">
+  <h2 class="h2-obrigatorio" style="font-weight: bold;">Campos obrigatórios</h2>
+</div>
+
+
+  
+  <div class="filho-content-modal-convidados">
+  
+    <div class="btn-input-obrigatorio">
+
+<div class="mdc-select mdc-select--outlined select-campo-obrigatorio">
+  <div class="mdc-select__anchor" aria-labelledby="outlined-select-label" style="height: 48px;">
+    <span class="mdc-notched-outline">
+      <span class="mdc-notched-outline__leading"></span>
+      <span class="mdc-notched-outline__notch">
+        <span id="outlined-select-label" class="mdc-floating-label">Selecione o campo</span>
+      </span>
+      <span class="mdc-notched-outline__trailing"></span>
+    </span>
+    <span class="mdc-select__selected-text-container">
+      <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+    </span>
+    <span class="mdc-select__dropdown-icon">
+      <svg
+          class="mdc-select__dropdown-icon-graphic"
+          viewBox="7 10 10 5" focusable="false">
+        <polygon
+            class="mdc-select__dropdown-icon-inactive"
+            stroke="none"
+            fill-rule="evenodd"
+            points="7 10 12 15 17 10">
+        </polygon>
+        <polygon
+            class="mdc-select__dropdown-icon-active"
+            stroke="none"
+            fill-rule="evenodd"
+            points="7 15 12 10 17 15">
+        </polygon>
+      </svg>
+    </span>
+  </div>
+</div> 
+
+
+<div class="mdc-touch-target-wrapper ">
+  <button class="mdc-button mdc-button--touch btn-campo-obrigatorio  " style="color: white; background-color: black; border: 1px solid black; "  >
+    <span class="mdc-button__ripple"></span>
+    <span class="mdc-button__touch"></span>
+    <span class="mdc-button__label">+ Adicionar campo obrigatório</span>
+  </button>
+</div>
+</div><!--btn-input-obrigatorio-->
+
+<div class="table-btns">
+
+
+
+  <div class="mdc-data-table " style="border: none !important;">
+    <div class="mdc-data-table__table-container" style="border: 1px solid #D9D9D9;" >
+      <table class="mdc-data-table__table" aria-label="Dessert calories">
+        <thead >
+          <tr class="mdc-data-table__header-row " >
+            <th class="mdc-data-table__header-cell detail" role="columnheader" scope="col">Campos</th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col"></th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col"></th>
+          
+            
+       
+          </tr>
+        </thead>	
+  
+     
+        <tbody class="mdc-data-table__content"  >
+          
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+           
+            <th class="mdc-data-table__cell" scope="row" id="u0">Data de nascimento </th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0">
+              <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.375 11.6875C4.375 11.9336 4.15625 12.125 3.9375 12.125C3.69141 12.125 3.5 11.9336 3.5 11.6875V6C3.5 5.78125 3.69141 5.5625 3.9375 5.5625C4.15625 5.5625 4.375 5.78125 4.375 6V11.6875ZM6.5625 11.6875C6.5625 11.9336 6.34375 12.125 6.125 12.125C5.87891 12.125 5.6875 11.9336 5.6875 11.6875V6C5.6875 5.78125 5.87891 5.5625 6.125 5.5625C6.34375 5.5625 6.5625 5.78125 6.5625 6V11.6875ZM8.75 11.6875C8.75 11.9336 8.53125 12.125 8.3125 12.125C8.06641 12.125 7.875 11.9336 7.875 11.6875V6C7.875 5.78125 8.06641 5.5625 8.3125 5.5625C8.53125 5.5625 8.75 5.78125 8.75 6V11.6875ZM8.66797 1.43359L9.67969 2.9375H11.5938C11.9492 2.9375 12.25 3.23828 12.25 3.59375C12.25 3.97656 11.9492 4.25 11.5938 4.25H11.375V12.5625C11.375 13.793 10.3906 14.75 9.1875 14.75H3.0625C1.83203 14.75 0.875 13.793 0.875 12.5625V4.25H0.65625C0.273438 4.25 0 3.97656 0 3.59375C0 3.23828 0.273438 2.9375 0.65625 2.9375H2.54297L3.55469 1.43359C3.82812 1.02344 4.32031 0.75 4.83984 0.75H7.38281C7.90234 0.75 8.39453 1.02344 8.66797 1.43359ZM4.12891 2.9375H8.09375L7.57422 2.17188C7.54688 2.11719 7.46484 2.0625 7.38281 2.0625H4.83984C4.75781 2.0625 4.67578 2.11719 4.64844 2.17188L4.12891 2.9375ZM2.1875 12.5625C2.1875 13.0547 2.57031 13.4375 3.0625 13.4375H9.1875C9.65234 13.4375 10.0625 13.0547 10.0625 12.5625V4.25H2.1875V12.5625Z" fill="#202020"/>
+                </svg>
+                </td>
+            </th>
+          
+          </tr>
+
+
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+            <td class="mdc-data-table__cell">Foto</td>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0">
+              <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.375 11.6875C4.375 11.9336 4.15625 12.125 3.9375 12.125C3.69141 12.125 3.5 11.9336 3.5 11.6875V6C3.5 5.78125 3.69141 5.5625 3.9375 5.5625C4.15625 5.5625 4.375 5.78125 4.375 6V11.6875ZM6.5625 11.6875C6.5625 11.9336 6.34375 12.125 6.125 12.125C5.87891 12.125 5.6875 11.9336 5.6875 11.6875V6C5.6875 5.78125 5.87891 5.5625 6.125 5.5625C6.34375 5.5625 6.5625 5.78125 6.5625 6V11.6875ZM8.75 11.6875C8.75 11.9336 8.53125 12.125 8.3125 12.125C8.06641 12.125 7.875 11.9336 7.875 11.6875V6C7.875 5.78125 8.06641 5.5625 8.3125 5.5625C8.53125 5.5625 8.75 5.78125 8.75 6V11.6875ZM8.66797 1.43359L9.67969 2.9375H11.5938C11.9492 2.9375 12.25 3.23828 12.25 3.59375C12.25 3.97656 11.9492 4.25 11.5938 4.25H11.375V12.5625C11.375 13.793 10.3906 14.75 9.1875 14.75H3.0625C1.83203 14.75 0.875 13.793 0.875 12.5625V4.25H0.65625C0.273438 4.25 0 3.97656 0 3.59375C0 3.23828 0.273438 2.9375 0.65625 2.9375H2.54297L3.55469 1.43359C3.82812 1.02344 4.32031 0.75 4.83984 0.75H7.38281C7.90234 0.75 8.39453 1.02344 8.66797 1.43359ZM4.12891 2.9375H8.09375L7.57422 2.17188C7.54688 2.11719 7.46484 2.0625 7.38281 2.0625H4.83984C4.75781 2.0625 4.67578 2.11719 4.64844 2.17188L4.12891 2.9375ZM2.1875 12.5625C2.1875 13.0547 2.57031 13.4375 3.0625 13.4375H9.1875C9.65234 13.4375 10.0625 13.0547 10.0625 12.5625V4.25H2.1875V12.5625Z" fill="#202020"/>
+                </svg>
+                </td>
+            </th>
+            
+          </tr>
+
+
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+            <td class="mdc-data-table__cell">Endereço</td>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0">
+              <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.375 11.6875C4.375 11.9336 4.15625 12.125 3.9375 12.125C3.69141 12.125 3.5 11.9336 3.5 11.6875V6C3.5 5.78125 3.69141 5.5625 3.9375 5.5625C4.15625 5.5625 4.375 5.78125 4.375 6V11.6875ZM6.5625 11.6875C6.5625 11.9336 6.34375 12.125 6.125 12.125C5.87891 12.125 5.6875 11.9336 5.6875 11.6875V6C5.6875 5.78125 5.87891 5.5625 6.125 5.5625C6.34375 5.5625 6.5625 5.78125 6.5625 6V11.6875ZM8.75 11.6875C8.75 11.9336 8.53125 12.125 8.3125 12.125C8.06641 12.125 7.875 11.9336 7.875 11.6875V6C7.875 5.78125 8.06641 5.5625 8.3125 5.5625C8.53125 5.5625 8.75 5.78125 8.75 6V11.6875ZM8.66797 1.43359L9.67969 2.9375H11.5938C11.9492 2.9375 12.25 3.23828 12.25 3.59375C12.25 3.97656 11.9492 4.25 11.5938 4.25H11.375V12.5625C11.375 13.793 10.3906 14.75 9.1875 14.75H3.0625C1.83203 14.75 0.875 13.793 0.875 12.5625V4.25H0.65625C0.273438 4.25 0 3.97656 0 3.59375C0 3.23828 0.273438 2.9375 0.65625 2.9375H2.54297L3.55469 1.43359C3.82812 1.02344 4.32031 0.75 4.83984 0.75H7.38281C7.90234 0.75 8.39453 1.02344 8.66797 1.43359ZM4.12891 2.9375H8.09375L7.57422 2.17188C7.54688 2.11719 7.46484 2.0625 7.38281 2.0625H4.83984C4.75781 2.0625 4.67578 2.11719 4.64844 2.17188L4.12891 2.9375ZM2.1875 12.5625C2.1875 13.0547 2.57031 13.4375 3.0625 13.4375H9.1875C9.65234 13.4375 10.0625 13.0547 10.0625 12.5625V4.25H2.1875V12.5625Z" fill="#202020"/>
+                </svg>
+                </td>
+            </th>
+    
+          </tr>
+
+
+          
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+            <td class="mdc-data-table__cell">Gênero</td>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0"></th>
+            <th class="mdc-data-table__cell" scope="row" id="u0">
+              <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.375 11.6875C4.375 11.9336 4.15625 12.125 3.9375 12.125C3.69141 12.125 3.5 11.9336 3.5 11.6875V6C3.5 5.78125 3.69141 5.5625 3.9375 5.5625C4.15625 5.5625 4.375 5.78125 4.375 6V11.6875ZM6.5625 11.6875C6.5625 11.9336 6.34375 12.125 6.125 12.125C5.87891 12.125 5.6875 11.9336 5.6875 11.6875V6C5.6875 5.78125 5.87891 5.5625 6.125 5.5625C6.34375 5.5625 6.5625 5.78125 6.5625 6V11.6875ZM8.75 11.6875C8.75 11.9336 8.53125 12.125 8.3125 12.125C8.06641 12.125 7.875 11.9336 7.875 11.6875V6C7.875 5.78125 8.06641 5.5625 8.3125 5.5625C8.53125 5.5625 8.75 5.78125 8.75 6V11.6875ZM8.66797 1.43359L9.67969 2.9375H11.5938C11.9492 2.9375 12.25 3.23828 12.25 3.59375C12.25 3.97656 11.9492 4.25 11.5938 4.25H11.375V12.5625C11.375 13.793 10.3906 14.75 9.1875 14.75H3.0625C1.83203 14.75 0.875 13.793 0.875 12.5625V4.25H0.65625C0.273438 4.25 0 3.97656 0 3.59375C0 3.23828 0.273438 2.9375 0.65625 2.9375H2.54297L3.55469 1.43359C3.82812 1.02344 4.32031 0.75 4.83984 0.75H7.38281C7.90234 0.75 8.39453 1.02344 8.66797 1.43359ZM4.12891 2.9375H8.09375L7.57422 2.17188C7.54688 2.11719 7.46484 2.0625 7.38281 2.0625H4.83984C4.75781 2.0625 4.67578 2.11719 4.64844 2.17188L4.12891 2.9375ZM2.1875 12.5625C2.1875 13.0547 2.57031 13.4375 3.0625 13.4375H9.1875C9.65234 13.4375 10.0625 13.0547 10.0625 12.5625V4.25H2.1875V12.5625Z" fill="#202020"/>
+                </svg>
+                </td>
+            </th>
+    
+          </tr>
+
+
+
+        </tbody>
+  
+      </table>
+   
+    </div>
+  </div>
+<!--finalizando tabela-->
+<div class="btn-table-duplo">
+
+<div class="mdc-touch-target-wrapper ">
+  <button id="btn-cancelar2" class="mdc-button mdc-button--touch btn-table  " style="color: black; background-color: white; border: 1px solid black; "  >
+    <span class="mdc-button__ripple"></span>
+    <span class="mdc-button__touch"></span>
+    <span class="mdc-button__label">Cancelar</span>
+  </button>
+</div>
+
+
+<div class="mdc-touch-target-wrapper ">
+  <button  class="mdc-button mdc-button--touch btn-table2" style="color: white; background-color: black; border: 1px solid black; "  >
+    <span class="mdc-button__ripple"></span>
+    <span class="mdc-button__touch"></span>
+    <span class="mdc-button__label">Criar evento</span>
+  </button>
+</div>
+
+</div><!--btn-table-duplo-->
+
+
+</div><!--table-btns-->
+
+
+
+  </div>
+
+
+  
+
+    
+  <div class="mdc-dialog__scrim"></div>
+</div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div><!--container-crud-->
+    
+    <footer><p> © 2023- SPR Sistemas de controle</p></footer>
+
+
+
+    <script>
+    
+       const cadastrarEventoButton = document.getElementById('cadastrar-evento');
+        const meuModal = document.getElementById('meu-modal5');
+        const fecharModalButton = meuModal.querySelector('.mdc-dialog__close5');
+        const cancelar = document.getElementById('btn-cancelar2')
+
+        cadastrarEventoButton.addEventListener('click', () => {
+            meuModal.classList.add('mdc-dialog--open');
+        });
+
+        cancelar.addEventListener('click', () => {
+          meuModal.classList.remove('mdc-dialog--open');
+          
+        })
+
+        fecharModalButton.addEventListener('click', () => {
+            meuModal.classList.remove('mdc-dialog--open');
+        });
+
+       
+
+    const textFields = document.querySelectorAll('.mdc-text-field');
+        textFields.forEach((textField) => {
+            mdc.textField.MDCTextField.attachTo(textField);
+        });
+        </script>
+    <script src="./script.js"></script>
+</body>
+</html>
