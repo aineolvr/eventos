@@ -2944,6 +2944,13 @@ tbody  td{
  }
 
  
+.h2-obrigatorio{
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color:#000000;
+}
 
 .margin-check{
     margin-left: 0px;
