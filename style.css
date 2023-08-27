@@ -2929,7 +2929,7 @@ tbody  td{
     
 .input-padrao-convidados{
     height: 48px;
-    width: 250px;
+    width: 290px;
     border-radius: 8px;
    margin-bottom: 15px;
   margin-right: 10px;
@@ -2992,13 +2992,13 @@ tbody  td{
 
 
 .btn-table{
-    width: 140px;
+    width: 150px;
     height: 48px;
 
 }
 
 .btn-table2{
-    width: 140px;
+    width: 150px;
     height: 48px;
     margin-left: 15px;
 }
