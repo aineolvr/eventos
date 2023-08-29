@@ -424,7 +424,7 @@ border-bottom: 1px solid #D9D9D9;
 
 .div-content .mdc-button{
     font-size: 10px;
-    width: 100px;
+    width: 100%;
     background-color: black;
     color: rgb(242, 237, 237);
 
