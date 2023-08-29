@@ -1244,6 +1244,11 @@ tbody  td{
        border-radius: 8px;
        font-weight: bold;
     }
+
+    .inputs-div2-content{
+        width: 320px;
+        height: 48px;
+    }
   }
 
 
@@ -2945,7 +2950,7 @@ tbody  td{
 
  
 .h2-obrigatorio{
-    padding: 20px 10px;
+    padding: 20px 10px; 
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -3010,5 +3015,383 @@ tbody  td{
     margin-left: 15px;
 }
 
+
+}
+
+
+/* COMEÇANDO TELA EDITAR EVENTOS*/
+
+.container-tela-editar-eventos{
+ 
+    height: 100vh;
+}
+
+.content-tela-editar{
+    display: block;
+    flex-direction: column;
+    padding: 20px 40px;
+    margin-left: 14%;
+    max-width: 1300px;
+   
+}
+
+.h2-editar{
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    
+}
+
+.input-p{
+    width: 250px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+   
+}
+
+.input-g{
+    width: 383px;
+    height: 48px;
+    border-radius: 8px;
+   margin-right: 10px;
+   margin-bottom: 15px;
+}
+
+
+.margin-check2{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.h2-campos{
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.table-btns2{
+    display: none;
+    width: 60%;
+    padding: 10px 0px;
+}
+
+.btns-tela-editar{
+    margin-top: 15px;
+   display: flex;
+    justify-content: flex-end;
+    margin-right: 14%;
+}
+
+.btn-tela-editar{
+    height: 48px;
+    border-radius: 8px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+.mdc-select__menu {
+    transform: translateY(49px);
+
+}
+
+.mdc-list-item {
+    padding: 10px 10px; 
+    border-bottom:  1px solid #D9D9D9; 
+    transition: background-color 0.3s ease;
+}
+
+
+.mdc-list-item:hover {
+    background-color: #D9D9D9; 
+}
+
+.mdc-list-item:last-child {
+    border-bottom: none;
+}
+
+.mdc-select__anchor,
+.mdc-select__notched-outline,
+.mdc-select__selected-text-container,
+.mdc-select__dropdown-icon {
+    height: 48px !important;
+}
+
+.mdc-floating-label--float-above {
+    top: -22px; 
+    font-size: 12px;
+    background-color: white;
+    padding: 0 1px;
+  
+    border-radius: 4px;
+  }
+
+
+@media screen and (max-width: 768px) {
+
+   
+    
+.input-g{
+    width: 250px;
+    height: 48px;
+    border-radius: 8px;
+   margin-right: 10px;
+   margin-bottom: 15px;
+   margin-top: 10px;
+}
+
+.content-tela-editar{
+    padding: 20px 40px;
+    margin-left: 5%;
+}
+
+.margin-check2{
+    margin-left: 0px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+}
+
+
+.table-btns2{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.table-editar-eventos{
+    display: none;
+}
+
+.h2-campos{
+    padding: 10px 0px;
+    margin-bottom: 10px;
+  
+}
+
+.btn-table-edit{
+    width: 200px;
+    height: 48px;
+    margin-left: 23px;
+}
+
+.table-tela-editar-mobile{
+    margin-right: 150px;
+  
+}
+
+
+.btns-tela-editar{
+   display: none;
+}
+
+.mdc-select__anchor,
+.mdc-select__notched-outline,
+.mdc-select__selected-text-container,
+.mdc-select__dropdown-icon {
+    height: 48px !important;
+}
+
+}
+
+
+/* COMEÇANDO TELA  LISTAS IMPORTAÇÕES*/
+
+.total-registros4{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.total-registros-content4{
+    border-radius: 10px;
+    background-color: #F9EAC0;
+    width: 828px;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+}
+
+.div-color4{
+    background-color: #FFC61A;
+    width: 10px;
+    border-radius: 8px;
+    height: 50px;
+}
+
+.animacao-btn{
+    display: flex;
+}
+
+.btn-animacao{
+    padding: 10px 10px;
+    height: 48px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.table-listas-ingressos2{
+    padding: 10px 0px 10px 20px;
+    
+ }
+
+ 
+@media screen and (max-width: 768px) {
+    .total-registros4{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px 7px;
+    }
+
+    
+.total-registros-content4{
+    border-radius: 10px;
+    background-color: #F9EAC0;
+    width: 350px;
+    height: 80px;
+    display: flex;
+    align-items: center; 
+}
+
+.div-color4{
+    background-color: #FFC61A;
+    width: 10px;
+    border-radius: 8px;
+    height: 80px;
+}
+
+.animacao-btn{
+    display: block;
+}
+.btn-animacao{
+    width: 300px;
+    padding: 10px 10px;
+    height: 48px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+}
+
+
+
+  /* COMEÇANDO MODAL USUÁRIOS DE SUPORTE */
+
+.linha1-usuarios-suporte{
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-usuario-suporte{
+    width: 290px;
+    height: 48px;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.btn-usuario-suporte{
+    margin-left: 10px;
+    padding: 10px 20px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+
+.table-btns-usuarios-suporte{
+    margin-top: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-finais-table-usuarios{
+    margin-top: 20px;
+    position: relative;
+   left: 240px;
+}
+
+.btn1-usuario{
+    width: 190px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.btn2-usuario{
+    width: 190px;
+    height: 48px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .linha1-usuarios-suporte{
+        display: flex;
+        padding: 15px 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .input-usuario-suporte{
+        width: 260px;
+        height: 48px;
+        border-radius: 8px;
+        margin-left: 0px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .btn-usuario-suporte{
+        margin-left: 0px;
+        padding: 25px 25px;
+        width: 260px;
+        height: 48px;
+        border-radius: 8px;
+        margin-top: 5px;
+    }
+    
+    
+
+.table-btns-usuarios-suporte{
+    margin-top: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+    
+    
+}
+
+.tabela-usuario-suporte-web{
+    width: 80%;
+}
+
+
+.btn-finais-table-usuarios{
+    margin-top: 20px;
+   
+   left: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.btn1-usuario{
+    width: 120px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.btn2-usuario{
+    width: 120px;
+    height: 48px;
+}
 
 }
