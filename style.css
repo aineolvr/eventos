@@ -3313,7 +3313,7 @@ tbody  td{
 .btn-finais-table-usuarios{
     margin-top: 20px;
     position: relative;
-   left: 240px;
+   left: 360px;
 }
 
 .btn1-usuario{
@@ -3322,10 +3322,7 @@ tbody  td{
     margin-right: 20px;
 }
 
-.btn2-usuario{
-    width: 190px;
-    height: 48px;
-}
+
 
 
 @media screen and (max-width: 768px) {
@@ -3389,9 +3386,6 @@ tbody  td{
     margin-right: 20px;
 }
 
-.btn2-usuario{
-    width: 120px;
-    height: 48px;
-}
+
 
 }
